@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* primary */
+    --clr-Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --clr-Soft-Pink: hsl(333, 80%, 67%);
+
+    /* neutral */
+    --clr-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --clr-Light-Grayish-Magenta:  hsl(300, 24%, 96%);
+    --clr-White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --ff:'League Spartan' ,sans-serif;
+    --fs-body:1rem;
+    --fs-heading:3em;
+    --fw-400:400;
+    --fw-500:500;
+    --fw-700:700;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-400);
+    background-color: var(--clr-White);
+}
+img {
+    max-width:100%;
+    display:block;
+}
+/* typology */
+.title {
+    font-family: var(--ff);
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-700);
+    color:var(--clr-Very-Dark-Magenta)
+}
+.title-desc {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-body);
+    color:var(--clr-Dark-Grayish-Magenta)
+}
+.rating-text{
+    color:var(--clr-Very-Dark-Magenta);
+    font-weight: var(--fw-700);
+}
+.name{
+    color:var(--clr-White);
+    font-weight:var(--fw-500);
+    display: block;
+}
+span{
+    color:var(--clr-Soft-Pink);
+}
+.user-usage-desc{
+    color:var(--clr-Light-Grayish-Magenta)
+}
+
+/* layout */
+.wrapper{
+    height: 100dvh;
+    padding:5rem;
+}
+.title-rating-box{
+    display:flex;
+    align-items: center;
+}
+.title-box {
+    max-width:50%;
+}
+.rating-boxes{
+    max-width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    margin-inline: auto;
+}
+.stars{
+    display: inline-block;
+}
+.user-rating-boxes{
+    display:flex;
+    gap:1.5rem;
+    margin-top:5rem;
+
+    
+}
+.user-details-flex{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-bottom:2rem;
+    
+}
+.user-rating-box {
+    background-color: var(--clr-Very-Dark-Magenta);
+    color:var(--clr-Light-Grayish-Magenta);
+    border-radius:.5rem;
+    padding:2rem;
+
+}
+.colton{
+    width:2.5rem;
+    border:none;
+    border-radius: 50%;
+}
+.Irene{
+    width:2.5rem;
+    border:none;
+    border-radius: 50%;
+}
+.Anne{
+    width:2.5rem;
+    border:none;
+    border-radius: 50%;
+}
+.rating-box {
+    background-color: var(--clr-Light-Grayish-Magenta);
+    padding:1rem 1.5rem;
+    border-radius:.8rem;
+    display:inline-flex;
+    align-items: center;
+    position:relative;
+    gap:.5rem;
+}
+.rating-boxes .two{
+    left:2rem;
+}
+.rating-boxes .three{
+    left:4rem;
+}
